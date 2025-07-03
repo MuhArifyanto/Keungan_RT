@@ -1,0 +1,87 @@
+INFO - 2025-07-02 02:38:47 --> Request method: GET
+INFO - 2025-07-02 02:38:47 --> POST data: []
+INFO - 2025-07-02 02:38:47 --> Raw input: 
+INFO - 2025-07-02 02:38:47 --> Method comparison: NO MATCH
+DEBUG - 2025-07-02 02:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 02:43:02 --> Request method: GET
+INFO - 2025-07-02 02:43:02 --> POST data: []
+INFO - 2025-07-02 02:43:02 --> Raw input: 
+INFO - 2025-07-02 02:43:02 --> Method comparison: NO MATCH
+DEBUG - 2025-07-02 02:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-02 02:54:34 --> Request method: GET
+INFO - 2025-07-02 02:54:34 --> POST data: []
+INFO - 2025-07-02 02:54:34 --> Raw input: 
+INFO - 2025-07-02 02:54:34 --> Method comparison: NO MATCH
+DEBUG - 2025-07-02 02:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 02:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 03:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-02 22:52:57 --> mysqli_sql_exception: Unknown column 'rt' in 'field list' in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `wa...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wa...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wa...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wa...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\keuangan_rt\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\keuangan_rt\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\keuangan_rt\app\Controllers\Warga.php(260): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Warga->addSampleWarga()
+#9 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Warga))
+#10 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+DEBUG - 2025-07-02 22:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 22:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-02 23:57:04 --> Form submission data: {"csrf_test_name":"c512855ca906de4b6a8942f5dd72c977","nama":"Kakaa","alamat":"jln12","no_hp":"123-4567-8908","rt":"001","rw":"001","keterangan":""}
+DEBUG - 2025-07-02 23:57:04 --> Data to insert: {"nama":"Kakaa","alamat":"jln12","no_hp":"123-4567-8908","rt":"001","rw":"001","keterangan":null,"status":"aktif","tanggal_daftar":"2025-07-02 23:57:04"}
+DEBUG - 2025-07-02 23:57:04 --> New warga ID: 27
+DEBUG - 2025-07-02 23:57:04 --> Iuran data: {"id_warga":27,"bulan":"Juli","tahun":"2025","nominal":50000,"jumlah":50000,"status":"belum lunas","tanggal":"2025-07-02 23:57:04"}
+WARNING - 2025-07-02 23:57:04 --> Iuran creation failed but warga saved
+INFO - 2025-07-02 23:57:04 --> Warga saved successfully: Data warga 'Kakaa' berhasil disimpan dan iuran Juli 2025 telah dibuat.
+DEBUG - 2025-07-02 23:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

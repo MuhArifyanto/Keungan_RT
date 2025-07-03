@@ -1,0 +1,401 @@
+DEBUG - 2025-07-03 00:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:06:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:06:43 --> Form submission data: {"csrf_test_name":"c512855ca906de4b6a8942f5dd72c977","nama":"Alfar","alamat":"jln34","no_hp":"567-8909-8761","rt":"001","rw":"001","keterangan":""}
+DEBUG - 2025-07-03 00:06:43 --> Data to insert: {"nama":"Alfar","alamat":"jln34","no_hp":"567-8909-8761","rt":"001","rw":"001","keterangan":null,"status":"aktif","tanggal_daftar":"2025-07-03 00:06:43"}
+DEBUG - 2025-07-03 00:06:44 --> New warga ID: 28
+DEBUG - 2025-07-03 00:06:44 --> Iuran data: {"id_warga":28,"bulan":"Juli","tahun":"2025","nominal":50000,"jumlah":50000,"status":"belum lunas","tanggal":"2025-07-03 00:06:44"}
+WARNING - 2025-07-03 00:06:44 --> Iuran creation failed but warga saved
+INFO - 2025-07-03 00:06:44 --> Warga saved successfully: Data warga 'Alfar' berhasil disimpan dan iuran Juli 2025 telah dibuat.
+DEBUG - 2025-07-03 00:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-03 00:13:47 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\user\profile.php on line 332.
+ 1 APPPATH\Views\user\profile.php(332): substr(null, 0, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\user.php(19): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-03 00:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-03 00:19:23 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\user\profile.php on line 332.
+ 1 APPPATH\Views\user\profile.php(332): substr(null, 0, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\user.php(19): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-03 00:19:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-03 00:19:36 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\user\profile.php on line 332.
+ 1 APPPATH\Views\user\profile.php(332): substr(null, 0, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\user.php(19): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-03 00:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-03 00:23:41 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\user\profile.php on line 332.
+ 1 APPPATH\Views\user\profile.php(332): substr(null, 0, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\user.php(19): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-03 00:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 00:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 01:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:01:12 --> Request method: GET
+INFO - 2025-07-03 02:01:12 --> POST data: []
+INFO - 2025-07-03 02:01:12 --> Raw input: 
+INFO - 2025-07-03 02:01:12 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:06:10 --> Form submission data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","nama":"Jokowi","alamat":"Jl A. No 1","no_hp":"123-4567-8989","rt":"001","rw":"001","keterangan":"orang baik"}
+DEBUG - 2025-07-03 02:06:10 --> Data to insert: {"nama":"Jokowi","alamat":"Jl A. No 1","no_hp":"123-4567-8989","rt":"001","rw":"001","keterangan":"orang baik","status":"aktif","tanggal_daftar":"2025-07-03 02:06:10"}
+DEBUG - 2025-07-03 02:06:10 --> New warga ID: 29
+DEBUG - 2025-07-03 02:06:10 --> Iuran data: {"id_warga":29,"bulan":"Juli","tahun":"2025","nominal":50000,"jumlah":50000,"status":"belum lunas","tanggal":"2025-07-03 02:06:10"}
+WARNING - 2025-07-03 02:06:10 --> Iuran creation failed but warga saved
+INFO - 2025-07-03 02:06:10 --> Warga saved successfully: Data warga 'Jokowi' berhasil disimpan dan iuran Juli 2025 telah dibuat.
+DEBUG - 2025-07-03 02:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:06:42 --> Form submission data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","nama":"Joni","alamat":"jl A. NO 2","no_hp":"987-6545-6789","rt":"001","rw":"001","keterangan":""}
+DEBUG - 2025-07-03 02:06:42 --> Data to insert: {"nama":"Joni","alamat":"jl A. NO 2","no_hp":"987-6545-6789","rt":"001","rw":"001","keterangan":null,"status":"aktif","tanggal_daftar":"2025-07-03 02:06:42"}
+DEBUG - 2025-07-03 02:06:42 --> New warga ID: 30
+DEBUG - 2025-07-03 02:06:42 --> Iuran data: {"id_warga":30,"bulan":"Juli","tahun":"2025","nominal":50000,"jumlah":50000,"status":"belum lunas","tanggal":"2025-07-03 02:06:42"}
+WARNING - 2025-07-03 02:06:42 --> Iuran creation failed but warga saved
+INFO - 2025-07-03 02:06:42 --> Warga saved successfully: Data warga 'Joni' berhasil disimpan dan iuran Juli 2025 telah dibuat.
+DEBUG - 2025-07-03 02:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:06:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:07:10 --> Form submission data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","nama":"Freya","alamat":"jl A. NO 3","no_hp":"987-6543-4567","rt":"001","rw":"001","keterangan":"orang baik"}
+DEBUG - 2025-07-03 02:07:10 --> Data to insert: {"nama":"Freya","alamat":"jl A. NO 3","no_hp":"987-6543-4567","rt":"001","rw":"001","keterangan":"orang baik","status":"aktif","tanggal_daftar":"2025-07-03 02:07:10"}
+DEBUG - 2025-07-03 02:07:10 --> New warga ID: 31
+DEBUG - 2025-07-03 02:07:10 --> Iuran data: {"id_warga":31,"bulan":"Juli","tahun":"2025","nominal":50000,"jumlah":50000,"status":"belum lunas","tanggal":"2025-07-03 02:07:10"}
+WARNING - 2025-07-03 02:07:10 --> Iuran creation failed but warga saved
+INFO - 2025-07-03 02:07:10 --> Warga saved successfully: Data warga 'Freya' berhasil disimpan dan iuran Juli 2025 telah dibuat.
+DEBUG - 2025-07-03 02:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:07:52 --> Form submission data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","nama":"Yuda","alamat":"jl A. NO 4","no_hp":"987-6543-4567","rt":"001","rw":"001","keterangan":"Kurang Mampu"}
+DEBUG - 2025-07-03 02:07:52 --> Data to insert: {"nama":"Yuda","alamat":"jl A. NO 4","no_hp":"987-6543-4567","rt":"001","rw":"001","keterangan":"Kurang Mampu","status":"aktif","tanggal_daftar":"2025-07-03 02:07:52"}
+DEBUG - 2025-07-03 02:07:52 --> New warga ID: 32
+DEBUG - 2025-07-03 02:07:52 --> Iuran data: {"id_warga":32,"bulan":"Juli","tahun":"2025","nominal":50000,"jumlah":50000,"status":"belum lunas","tanggal":"2025-07-03 02:07:52"}
+WARNING - 2025-07-03 02:07:52 --> Iuran creation failed but warga saved
+INFO - 2025-07-03 02:07:52 --> Warga saved successfully: Data warga 'Yuda' berhasil disimpan dan iuran Juli 2025 telah dibuat.
+DEBUG - 2025-07-03 02:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:08:16 --> Form submission data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","nama":"Asep","alamat":"jl A. NO 5","no_hp":"456-7898-7654","rt":"001","rw":"001","keterangan":"Orang Kaya"}
+DEBUG - 2025-07-03 02:08:16 --> Data to insert: {"nama":"Asep","alamat":"jl A. NO 5","no_hp":"456-7898-7654","rt":"001","rw":"001","keterangan":"Orang Kaya","status":"aktif","tanggal_daftar":"2025-07-03 02:08:16"}
+DEBUG - 2025-07-03 02:08:16 --> New warga ID: 33
+DEBUG - 2025-07-03 02:08:16 --> Iuran data: {"id_warga":33,"bulan":"Juli","tahun":"2025","nominal":50000,"jumlah":50000,"status":"belum lunas","tanggal":"2025-07-03 02:08:16"}
+WARNING - 2025-07-03 02:08:16 --> Iuran creation failed but warga saved
+INFO - 2025-07-03 02:08:16 --> Warga saved successfully: Data warga 'Asep' berhasil disimpan dan iuran Juli 2025 telah dibuat.
+DEBUG - 2025-07-03 02:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:09:02 --> Request method: GET
+INFO - 2025-07-03 02:09:02 --> POST data: []
+INFO - 2025-07-03 02:09:02 --> Raw input: 
+INFO - 2025-07-03 02:09:02 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:09:18 --> Request method: POST
+INFO - 2025-07-03 02:09:18 --> POST data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","id_warga":"31","bulan":"Juli","tahun":"2025","nominal":"10000","status":"lunas"}
+INFO - 2025-07-03 02:09:18 --> Raw input: csrf_test_name=acfa72ce87ffc53cf6a56e6257755d8a&id_warga=31&bulan=Juli&tahun=2025&nominal=10000&status=lunas
+INFO - 2025-07-03 02:09:18 --> Method comparison: MATCH
+INFO - 2025-07-03 02:09:18 --> POST data check: HAS DATA
+INFO - 2025-07-03 02:09:18 --> POST data received, proceeding to validation...
+INFO - 2025-07-03 02:09:18 --> Starting validation...
+INFO - 2025-07-03 02:09:18 --> Validation result: PASSED
+INFO - 2025-07-03 02:09:18 --> Validation passed, processing payment...
+INFO - 2025-07-03 09:09:18 --> Payment timestamp: 2025-07-03 09:09:18 (timezone: Asia/Jakarta)
+INFO - 2025-07-03 09:09:18 --> Saving iuran data: {"id_warga":"31","bulan":"Juli","tahun":"2025","jumlah":"10000","status":"lunas","tanggal":"2025-07-03 09:09:18"}
+INFO - 2025-07-03 09:09:18 --> Saving iuran data: {"id_warga":"31","bulan":"Juli","tahun":"2025","nominal":"10000","jumlah":"10000","status":"lunas","tanggal":"2025-07-03 09:09:18"}
+INFO - 2025-07-03 09:09:18 --> Checking status for transaction: lunas
+INFO - 2025-07-03 09:09:18 --> Creating transaction for lunas payment
+DEBUG - 2025-07-03 09:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 09:09:18 --> Creating transaction with data: {"tanggal":"2025-07-03 09:09:18","jenis":"masuk","jumlah":"10000","keterangan":"Pembayaran iuran Juli 2025 - Freya","id_user":"1","id_warga":"31"}
+INFO - 2025-07-03 09:09:18 --> Transaction created successfully with ID: 121
+INFO - 2025-07-03 09:09:18 --> Payment successful, redirecting to dashboard
+INFO - 2025-07-03 02:09:24 --> Request method: GET
+INFO - 2025-07-03 02:09:24 --> POST data: []
+INFO - 2025-07-03 02:09:24 --> Raw input: 
+INFO - 2025-07-03 02:09:24 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:09:36 --> Request method: POST
+INFO - 2025-07-03 02:09:36 --> POST data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","id_warga":"29","bulan":"Juli","tahun":"2025","nominal":"15000","status":"lunas"}
+INFO - 2025-07-03 02:09:36 --> Raw input: csrf_test_name=acfa72ce87ffc53cf6a56e6257755d8a&id_warga=29&bulan=Juli&tahun=2025&nominal=15000&status=lunas
+INFO - 2025-07-03 02:09:36 --> Method comparison: MATCH
+INFO - 2025-07-03 02:09:36 --> POST data check: HAS DATA
+INFO - 2025-07-03 02:09:36 --> POST data received, proceeding to validation...
+INFO - 2025-07-03 02:09:36 --> Starting validation...
+INFO - 2025-07-03 02:09:36 --> Validation result: PASSED
+INFO - 2025-07-03 02:09:36 --> Validation passed, processing payment...
+INFO - 2025-07-03 09:09:36 --> Payment timestamp: 2025-07-03 09:09:36 (timezone: Asia/Jakarta)
+INFO - 2025-07-03 09:09:37 --> Saving iuran data: {"id_warga":"29","bulan":"Juli","tahun":"2025","jumlah":"15000","status":"lunas","tanggal":"2025-07-03 09:09:36"}
+INFO - 2025-07-03 09:09:37 --> Saving iuran data: {"id_warga":"29","bulan":"Juli","tahun":"2025","nominal":"15000","jumlah":"15000","status":"lunas","tanggal":"2025-07-03 09:09:36"}
+INFO - 2025-07-03 09:09:37 --> Checking status for transaction: lunas
+INFO - 2025-07-03 09:09:37 --> Creating transaction for lunas payment
+DEBUG - 2025-07-03 09:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 09:09:37 --> Creating transaction with data: {"tanggal":"2025-07-03 09:09:36","jenis":"masuk","jumlah":"15000","keterangan":"Pembayaran iuran Juli 2025 - Jokowi","id_user":"1","id_warga":"29"}
+INFO - 2025-07-03 09:09:37 --> Transaction created successfully with ID: 122
+INFO - 2025-07-03 09:09:37 --> Payment successful, redirecting to dashboard
+INFO - 2025-07-03 02:09:40 --> Request method: GET
+INFO - 2025-07-03 02:09:40 --> POST data: []
+INFO - 2025-07-03 02:09:40 --> Raw input: 
+INFO - 2025-07-03 02:09:40 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:09:47 --> Request method: POST
+INFO - 2025-07-03 02:09:47 --> POST data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","id_warga":"32","bulan":"Januari","tahun":"2025","nominal":"5000","status":"belum_lunas"}
+INFO - 2025-07-03 02:09:47 --> Raw input: csrf_test_name=acfa72ce87ffc53cf6a56e6257755d8a&id_warga=32&bulan=Januari&tahun=2025&nominal=5000&status=belum_lunas
+INFO - 2025-07-03 02:09:47 --> Method comparison: MATCH
+INFO - 2025-07-03 02:09:47 --> POST data check: HAS DATA
+INFO - 2025-07-03 02:09:47 --> POST data received, proceeding to validation...
+INFO - 2025-07-03 02:09:47 --> Starting validation...
+INFO - 2025-07-03 02:09:47 --> Validation result: PASSED
+INFO - 2025-07-03 02:09:47 --> Validation passed, processing payment...
+INFO - 2025-07-03 09:09:47 --> Payment timestamp: 2025-07-03 09:09:47 (timezone: Asia/Jakarta)
+INFO - 2025-07-03 09:09:47 --> Saving iuran data: {"id_warga":"32","bulan":"Januari","tahun":"2025","jumlah":"5000","status":"belum_lunas","tanggal":"2025-07-03 09:09:47"}
+INFO - 2025-07-03 09:09:47 --> Saving iuran data: {"id_warga":"32","bulan":"Januari","tahun":"2025","nominal":"5000","jumlah":"5000","status":"belum_lunas","tanggal":"2025-07-03 09:09:47"}
+INFO - 2025-07-03 09:09:47 --> Checking status for transaction: belum_lunas
+DEBUG - 2025-07-03 09:09:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 09:09:47 --> Payment successful, redirecting to dashboard
+INFO - 2025-07-03 02:09:56 --> Request method: GET
+INFO - 2025-07-03 02:09:56 --> POST data: []
+INFO - 2025-07-03 02:09:56 --> Raw input: 
+INFO - 2025-07-03 02:09:56 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:10:09 --> Request method: POST
+INFO - 2025-07-03 02:10:09 --> POST data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","id_warga":"33","bulan":"Januari","tahun":"2025","nominal":"25000","status":"lunas"}
+INFO - 2025-07-03 02:10:09 --> Raw input: csrf_test_name=acfa72ce87ffc53cf6a56e6257755d8a&id_warga=33&bulan=Januari&tahun=2025&nominal=25000&status=lunas
+INFO - 2025-07-03 02:10:09 --> Method comparison: MATCH
+INFO - 2025-07-03 02:10:09 --> POST data check: HAS DATA
+INFO - 2025-07-03 02:10:09 --> POST data received, proceeding to validation...
+INFO - 2025-07-03 02:10:09 --> Starting validation...
+INFO - 2025-07-03 02:10:09 --> Validation result: PASSED
+INFO - 2025-07-03 02:10:09 --> Validation passed, processing payment...
+INFO - 2025-07-03 09:10:09 --> Payment timestamp: 2025-07-03 09:10:09 (timezone: Asia/Jakarta)
+INFO - 2025-07-03 09:10:09 --> Saving iuran data: {"id_warga":"33","bulan":"Januari","tahun":"2025","jumlah":"25000","status":"lunas","tanggal":"2025-07-03 09:10:09"}
+INFO - 2025-07-03 09:10:09 --> Saving iuran data: {"id_warga":"33","bulan":"Januari","tahun":"2025","nominal":"25000","jumlah":"25000","status":"lunas","tanggal":"2025-07-03 09:10:09"}
+INFO - 2025-07-03 09:10:09 --> Checking status for transaction: lunas
+INFO - 2025-07-03 09:10:09 --> Creating transaction for lunas payment
+DEBUG - 2025-07-03 09:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 09:10:09 --> Creating transaction with data: {"tanggal":"2025-07-03 09:10:09","jenis":"masuk","jumlah":"25000","keterangan":"Pembayaran iuran Januari 2025 - Asep","id_user":"1","id_warga":"33"}
+INFO - 2025-07-03 09:10:09 --> Transaction created successfully with ID: 123
+INFO - 2025-07-03 09:10:09 --> Payment successful, redirecting to dashboard
+DEBUG - 2025-07-03 02:10:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:10:38 --> Request method: GET
+INFO - 2025-07-03 02:10:38 --> POST data: []
+INFO - 2025-07-03 02:10:38 --> Raw input: 
+INFO - 2025-07-03 02:10:38 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:10:49 --> Request method: POST
+INFO - 2025-07-03 02:10:49 --> POST data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","id_warga":"31","bulan":"Juli","tahun":"2025","nominal":"15000","status":"lunas"}
+INFO - 2025-07-03 02:10:49 --> Raw input: csrf_test_name=acfa72ce87ffc53cf6a56e6257755d8a&id_warga=31&bulan=Juli&tahun=2025&nominal=15000&status=lunas
+INFO - 2025-07-03 02:10:49 --> Method comparison: MATCH
+INFO - 2025-07-03 02:10:49 --> POST data check: HAS DATA
+INFO - 2025-07-03 02:10:49 --> POST data received, proceeding to validation...
+INFO - 2025-07-03 02:10:50 --> Starting validation...
+INFO - 2025-07-03 02:10:50 --> Validation result: PASSED
+INFO - 2025-07-03 02:10:50 --> Validation passed, processing payment...
+DEBUG - 2025-07-03 02:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:10:50 --> Request method: GET
+INFO - 2025-07-03 02:10:50 --> POST data: []
+INFO - 2025-07-03 02:10:50 --> Raw input: 
+INFO - 2025-07-03 02:10:50 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:11:22 --> Request method: GET
+INFO - 2025-07-03 02:11:22 --> POST data: []
+INFO - 2025-07-03 02:11:22 --> Raw input: 
+INFO - 2025-07-03 02:11:22 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:11:33 --> Request method: POST
+INFO - 2025-07-03 02:11:33 --> POST data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","id_warga":"31","bulan":"Juli","tahun":"2025","nominal":"15000","status":"lunas"}
+INFO - 2025-07-03 02:11:33 --> Raw input: csrf_test_name=acfa72ce87ffc53cf6a56e6257755d8a&id_warga=31&bulan=Juli&tahun=2025&nominal=15000&status=lunas
+INFO - 2025-07-03 02:11:33 --> Method comparison: MATCH
+INFO - 2025-07-03 02:11:33 --> POST data check: HAS DATA
+INFO - 2025-07-03 02:11:33 --> POST data received, proceeding to validation...
+INFO - 2025-07-03 02:11:33 --> Starting validation...
+INFO - 2025-07-03 02:11:33 --> Validation result: PASSED
+INFO - 2025-07-03 02:11:33 --> Validation passed, processing payment...
+INFO - 2025-07-03 09:11:33 --> Payment timestamp: 2025-07-03 09:11:33 (timezone: Asia/Jakarta)
+INFO - 2025-07-03 09:11:33 --> Saving iuran data: {"id_warga":"31","bulan":"Juli","tahun":"2025","jumlah":"15000","status":"lunas","tanggal":"2025-07-03 09:11:33"}
+INFO - 2025-07-03 09:11:33 --> Saving iuran data: {"id_warga":"31","bulan":"Juli","tahun":"2025","nominal":"15000","jumlah":"15000","status":"lunas","tanggal":"2025-07-03 09:11:33"}
+INFO - 2025-07-03 09:11:33 --> Checking status for transaction: lunas
+INFO - 2025-07-03 09:11:33 --> Creating transaction for lunas payment
+DEBUG - 2025-07-03 09:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 09:11:33 --> Creating transaction with data: {"tanggal":"2025-07-03 09:11:33","jenis":"masuk","jumlah":"15000","keterangan":"Pembayaran iuran Juli 2025 - Freya","id_user":"1","id_warga":"31"}
+INFO - 2025-07-03 09:11:33 --> Transaction created successfully with ID: 124
+INFO - 2025-07-03 09:11:33 --> Payment successful, redirecting to dashboard
+INFO - 2025-07-03 02:11:36 --> Request method: GET
+INFO - 2025-07-03 02:11:36 --> POST data: []
+INFO - 2025-07-03 02:11:36 --> Raw input: 
+INFO - 2025-07-03 02:11:36 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:11:49 --> Request method: POST
+INFO - 2025-07-03 02:11:49 --> POST data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","id_warga":"29","bulan":"Juli","tahun":"2025","nominal":"15000","status":"lunas"}
+INFO - 2025-07-03 02:11:49 --> Raw input: csrf_test_name=acfa72ce87ffc53cf6a56e6257755d8a&id_warga=29&bulan=Juli&tahun=2025&nominal=15000&status=lunas
+INFO - 2025-07-03 02:11:49 --> Method comparison: MATCH
+INFO - 2025-07-03 02:11:49 --> POST data check: HAS DATA
+INFO - 2025-07-03 02:11:49 --> POST data received, proceeding to validation...
+INFO - 2025-07-03 02:11:49 --> Starting validation...
+INFO - 2025-07-03 02:11:49 --> Validation result: PASSED
+INFO - 2025-07-03 02:11:49 --> Validation passed, processing payment...
+INFO - 2025-07-03 09:11:49 --> Payment timestamp: 2025-07-03 09:11:49 (timezone: Asia/Jakarta)
+INFO - 2025-07-03 09:11:49 --> Saving iuran data: {"id_warga":"29","bulan":"Juli","tahun":"2025","jumlah":"15000","status":"lunas","tanggal":"2025-07-03 09:11:49"}
+INFO - 2025-07-03 09:11:49 --> Saving iuran data: {"id_warga":"29","bulan":"Juli","tahun":"2025","nominal":"15000","jumlah":"15000","status":"lunas","tanggal":"2025-07-03 09:11:49"}
+INFO - 2025-07-03 09:11:49 --> Checking status for transaction: lunas
+INFO - 2025-07-03 09:11:49 --> Creating transaction for lunas payment
+DEBUG - 2025-07-03 09:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 09:11:49 --> Creating transaction with data: {"tanggal":"2025-07-03 09:11:49","jenis":"masuk","jumlah":"15000","keterangan":"Pembayaran iuran Juli 2025 - Jokowi","id_user":"1","id_warga":"29"}
+INFO - 2025-07-03 09:11:49 --> Transaction created successfully with ID: 125
+INFO - 2025-07-03 09:11:49 --> Payment successful, redirecting to dashboard
+INFO - 2025-07-03 02:11:53 --> Request method: GET
+INFO - 2025-07-03 02:11:53 --> POST data: []
+INFO - 2025-07-03 02:11:53 --> Raw input: 
+INFO - 2025-07-03 02:11:53 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:12:03 --> Request method: POST
+INFO - 2025-07-03 02:12:03 --> POST data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","id_warga":"32","bulan":"Juli","tahun":"2025","nominal":"5000","status":"belum_lunas"}
+INFO - 2025-07-03 02:12:03 --> Raw input: csrf_test_name=acfa72ce87ffc53cf6a56e6257755d8a&id_warga=32&bulan=Juli&tahun=2025&nominal=5000&status=belum_lunas
+INFO - 2025-07-03 02:12:03 --> Method comparison: MATCH
+INFO - 2025-07-03 02:12:03 --> POST data check: HAS DATA
+INFO - 2025-07-03 02:12:03 --> POST data received, proceeding to validation...
+INFO - 2025-07-03 02:12:03 --> Starting validation...
+INFO - 2025-07-03 02:12:03 --> Validation result: PASSED
+INFO - 2025-07-03 02:12:03 --> Validation passed, processing payment...
+INFO - 2025-07-03 09:12:03 --> Payment timestamp: 2025-07-03 09:12:03 (timezone: Asia/Jakarta)
+INFO - 2025-07-03 09:12:03 --> Saving iuran data: {"id_warga":"32","bulan":"Juli","tahun":"2025","jumlah":"5000","status":"belum_lunas","tanggal":"2025-07-03 09:12:03"}
+INFO - 2025-07-03 09:12:03 --> Saving iuran data: {"id_warga":"32","bulan":"Juli","tahun":"2025","nominal":"5000","jumlah":"5000","status":"belum_lunas","tanggal":"2025-07-03 09:12:03"}
+INFO - 2025-07-03 09:12:03 --> Checking status for transaction: belum_lunas
+DEBUG - 2025-07-03 09:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 09:12:03 --> Payment successful, redirecting to dashboard
+INFO - 2025-07-03 02:12:06 --> Request method: GET
+INFO - 2025-07-03 02:12:06 --> POST data: []
+INFO - 2025-07-03 02:12:06 --> Raw input: 
+INFO - 2025-07-03 02:12:06 --> Method comparison: NO MATCH
+DEBUG - 2025-07-03 02:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 02:12:18 --> Request method: POST
+INFO - 2025-07-03 02:12:18 --> POST data: {"csrf_test_name":"acfa72ce87ffc53cf6a56e6257755d8a","id_warga":"33","bulan":"Juli","tahun":"2025","nominal":"20000","status":"lunas"}
+INFO - 2025-07-03 02:12:18 --> Raw input: csrf_test_name=acfa72ce87ffc53cf6a56e6257755d8a&id_warga=33&bulan=Juli&tahun=2025&nominal=20000&status=lunas
+INFO - 2025-07-03 02:12:18 --> Method comparison: MATCH
+INFO - 2025-07-03 02:12:18 --> POST data check: HAS DATA
+INFO - 2025-07-03 02:12:18 --> POST data received, proceeding to validation...
+INFO - 2025-07-03 02:12:18 --> Starting validation...
+INFO - 2025-07-03 02:12:18 --> Validation result: PASSED
+INFO - 2025-07-03 02:12:18 --> Validation passed, processing payment...
+INFO - 2025-07-03 09:12:18 --> Payment timestamp: 2025-07-03 09:12:18 (timezone: Asia/Jakarta)
+INFO - 2025-07-03 09:12:18 --> Saving iuran data: {"id_warga":"33","bulan":"Juli","tahun":"2025","jumlah":"20000","status":"lunas","tanggal":"2025-07-03 09:12:18"}
+INFO - 2025-07-03 09:12:18 --> Saving iuran data: {"id_warga":"33","bulan":"Juli","tahun":"2025","nominal":"20000","jumlah":"20000","status":"lunas","tanggal":"2025-07-03 09:12:18"}
+INFO - 2025-07-03 09:12:18 --> Checking status for transaction: lunas
+INFO - 2025-07-03 09:12:18 --> Creating transaction for lunas payment
+DEBUG - 2025-07-03 09:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-03 09:12:18 --> Creating transaction with data: {"tanggal":"2025-07-03 09:12:18","jenis":"masuk","jumlah":"20000","keterangan":"Pembayaran iuran Juli 2025 - Asep","id_user":"1","id_warga":"33"}
+INFO - 2025-07-03 09:12:18 --> Transaction created successfully with ID: 126
+INFO - 2025-07-03 09:12:18 --> Payment successful, redirecting to dashboard
+DEBUG - 2025-07-03 02:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 09:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 09:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 02:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 04:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-03 04:25:50 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\user\profile.php on line 332.
+ 1 APPPATH\Views\user\profile.php(332): substr(null, 0, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\user.php(19): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-03 04:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 04:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 04:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 04:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 05:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-03 05:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,1183 @@
+DEBUG - 2025-06-27 03:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-27 03:43:34 --> mysqli_sql_exception: Table 'uang_rakyat.users' doesn't exist in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('bayuhitam@gmail...', 'users.email', Array)
+#6 C:\xampp\htdocs\keuangan_rt\system\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\Rules->is_unique('bayuhitam@gmail...', 'users.email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\keuangan_rt\system\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bayuhitam@gmail...', Array, Array, 'email')
+#8 C:\xampp\htdocs\keuangan_rt\system\Controller.php(138): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\keuangan_rt\app\Controllers\Auth.php(24): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Auth->saveRegister()
+#11 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#12 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#17 {main}
+CRITICAL - 2025-06-27 03:43:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'uang_rakyat.users' doesn't exist
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('bayuhitam@gmail.com', 'users.email', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\Rules->is_unique('bayuhitam@gmail.com', 'users.email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bayuhitam@gmail.com', [...], [...], 'email')
+ 6 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(24): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->saveRegister()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 03:43:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'uang_rakyat.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'bayuhitam@gmail.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'bayuhitam@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('bayuhitam@gmail.com', 'users.email', [...])
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\Rules->is_unique('bayuhitam@gmail.com', 'users.email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bayuhitam@gmail.com', [...], [...], 'email')
+ 8 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Auth.php(24): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->saveRegister()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 03:43:34 --> [Caused by] mysqli_sql_exception: Table 'uang_rakyat.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'bayuhitam@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'bayuhitam@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'bayuhitam@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('bayuhitam@gmail.com', 'users.email', [...])
+ 7 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\Rules->is_unique('bayuhitam@gmail.com', 'users.email', [...], null, 'email')
+ 8 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('email', 'email', 'bayuhitam@gmail.com', [...], [...], 'email')
+ 9 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\Auth.php(24): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->saveRegister()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-27 03:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 03:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 04:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 05:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 06:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 06:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 06:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 06:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 06:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 06:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 06:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-27 08:33:30 --> ErrorException: Undefined variable $totalWarga
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 683.
+ 1 APPPATH\Views\dashboard.php(683): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalWarga', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 683)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(34): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+ERROR - 2025-06-27 08:37:49 --> mysqli_sql_exception: Unknown column 'nominal' in 'field list' in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nom...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nom...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nom...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nom...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-27 08:37:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:37:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:37:49 --> [Caused by] mysqli_sql_exception: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+ERROR - 2025-06-27 08:45:11 --> mysqli_sql_exception: Unknown column 'nominal' in 'field list' in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nom...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nom...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nom...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nom...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-27 08:45:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:45:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:45:11 --> [Caused by] mysqli_sql_exception: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+ERROR - 2025-06-27 08:45:13 --> mysqli_sql_exception: Unknown column 'nominal' in 'field list' in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nom...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nom...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nom...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nom...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-27 08:45:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:45:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:45:13 --> [Caused by] mysqli_sql_exception: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+ERROR - 2025-06-27 08:48:36 --> mysqli_sql_exception: Unknown column 'jenis' in 'where clause' in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`jum...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`jum...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`jum...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jum...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-27 08:48:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'jenis' in 'where clause'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jumlah`) AS `jumlah`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:48:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'jenis' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`jumlah`) AS `jumlah`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`jumlah`) AS `jumlah`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jumlah`) AS `jumlah`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:48:36 --> [Caused by] mysqli_sql_exception: Unknown column 'jenis' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`jumlah`) AS `jumlah`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`jumlah`) AS `jumlah`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`jumlah`) AS `jumlah`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`jumlah`) AS `jumlah`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:49:43 --> ErrorException: Undefined variable $totalWarga
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 683.
+ 1 APPPATH\Views\dashboard.php(683): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalWarga', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 683)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(34): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:54:04 --> ErrorException: Undefined variable $saldo
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 694.
+ 1 APPPATH\Views\dashboard.php(694): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $saldo', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 694)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(34): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:54:05 --> ErrorException: Undefined variable $saldo
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 694.
+ 1 APPPATH\Views\dashboard.php(694): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $saldo', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 694)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(34): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:57:15 --> ErrorException: Undefined variable $saldo
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 694.
+ 1 APPPATH\Views\dashboard.php(694): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $saldo', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 694)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(34): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 08:57:17 --> ErrorException: Undefined variable $saldo
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 694.
+ 1 APPPATH\Views\dashboard.php(694): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $saldo', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 694)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(34): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+ERROR - 2025-06-27 09:13:00 --> mysqli_sql_exception: Unknown column 'nominal' in 'field list' in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nom...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nom...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nom...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nom...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-27 09:13:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 09:13:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 09:13:00 --> [Caused by] mysqli_sql_exception: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+ERROR - 2025-06-27 09:13:03 --> mysqli_sql_exception: Unknown column 'nominal' in 'field list' in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nom...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nom...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nom...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nom...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-27 09:13:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 09:13:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 09:13:03 --> [Caused by] mysqli_sql_exception: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+ERROR - 2025-06-27 09:13:05 --> mysqli_sql_exception: Unknown column 'nominal' in 'field list' in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nom...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nom...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nom...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nom...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\system\BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-06-27 09:13:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 09:13:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 09:13:05 --> [Caused by] mysqli_sql_exception: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = \'masuk\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `transaksi`
+WHERE `jenis` = :jenis:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Dashboard.php(44): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Dashboard.php(29): App\Controllers\Dashboard->calculateSaldoKas()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 09:16:58 --> ErrorException: Undefined variable $saldo
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 694.
+ 1 APPPATH\Views\dashboard.php(694): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $saldo', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 694)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(34): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-27 09:19:01 --> ErrorException: Undefined variable $saldo
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 694.
+ 1 APPPATH\Views\dashboard.php(694): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $saldo', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 694)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(34): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-27 09:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 09:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 10:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 10:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 10:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-27 10:36:04 --> mysqli_sql_exception: Unknown column 'kategori' in 'where clause' in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `tr...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tr...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tr...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tr...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(127): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->cleanup()
+#6 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-27 10:36:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'where clause'
+[Method: GET, Route: cleanup]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `transaksi`
+WHERE `kategori` = :kategori:', [...], false)
+ 2 APPPATH\Controllers\Dashboard.php(127): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->cleanup()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-27 10:36:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'kategori' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `transaksi`
+WHERE `kategori` = \'Iuran Bulanan\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `transaksi`
+WHERE `kategori` = \'Iuran Bulanan\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `transaksi`
+WHERE `kategori` = :kategori:', [...], false)
+ 4 APPPATH\Controllers\Dashboard.php(127): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->cleanup()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-27 10:36:04 --> [Caused by] mysqli_sql_exception: Unknown column 'kategori' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `transaksi`
+WHERE `kategori` = \'Iuran Bulanan\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `transaksi`
+WHERE `kategori` = \'Iuran Bulanan\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `transaksi`
+WHERE `kategori` = \'Iuran Bulanan\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `transaksi`
+WHERE `kategori` = :kategori:', [...], false)
+ 5 APPPATH\Controllers\Dashboard.php(127): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->cleanup()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-27 10:44:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-27 10:47:09 --> ErrorException: Undefined array key "kategori"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 752.
+ 1 APPPATH\Views\dashboard.php(752): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kategori"', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 752)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(52): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-27 10:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 10:50:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 10:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 10:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-27 10:51:09 --> ErrorException: Undefined array key "kategori"
+[Method: GET, Route: transaksi/riwayat]
+in APPPATH\Views\transaksi\riwayat.php on line 54.
+ 1 APPPATH\Views\transaksi\riwayat.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kategori"', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\transaksi\\riwayat.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\transaksi\\riwayat.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('transaksi/riwayat', [], true)
+ 5 APPPATH\Controllers\transaksi.php(29): view('transaksi/riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-27 11:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 11:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 11:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-27 11:25:37 --> ErrorException: Undefined array key "kategori"
+[Method: GET, Route: transaksi/riwayat]
+in APPPATH\Views\transaksi\riwayat.php on line 54.
+ 1 APPPATH\Views\transaksi\riwayat.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kategori"', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\transaksi\\riwayat.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\transaksi\\riwayat.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('transaksi/riwayat', [], true)
+ 5 APPPATH\Controllers\transaksi.php(29): view('transaksi/riwayat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-27 11:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 11:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 11:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 11:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 11:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 11:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 11:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:40:10 --> Request method: GET
+INFO - 2025-06-27 11:40:10 --> POST data: []
+DEBUG - 2025-06-27 11:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:40:25 --> Request method: POST
+INFO - 2025-06-27 11:40:25 --> POST data: {"csrf_test_name":"ea29fb294d926619531a2f083e9342b1","id_warga":"21","bulan":"Januari","tahun":"2025","nominal":"10000","status":"lunas"}
+DEBUG - 2025-06-27 11:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:40:28 --> Request method: GET
+INFO - 2025-06-27 11:40:28 --> POST data: []
+DEBUG - 2025-06-27 11:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:42:06 --> Request method: POST
+INFO - 2025-06-27 11:42:06 --> POST data: {"csrf_test_name":"ea29fb294d926619531a2f083e9342b1","id_warga":"1","bulan":"Juni","tahun":"2025","nominal":"175000","status":"lunas"}
+DEBUG - 2025-06-27 11:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:42:23 --> Request method: GET
+INFO - 2025-06-27 11:42:23 --> POST data: []
+DEBUG - 2025-06-27 11:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:42:32 --> Request method: POST
+INFO - 2025-06-27 11:42:32 --> POST data: {"csrf_test_name":"ea29fb294d926619531a2f083e9342b1","id_warga":"21","bulan":"Januari","tahun":"2025","nominal":"100000","status":"lunas"}
+DEBUG - 2025-06-27 11:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:42:34 --> Request method: GET
+INFO - 2025-06-27 11:42:34 --> POST data: []
+DEBUG - 2025-06-27 11:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:47:36 --> Request method: GET
+INFO - 2025-06-27 11:47:36 --> POST data: []
+DEBUG - 2025-06-27 11:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:49:59 --> Request method: GET
+INFO - 2025-06-27 11:49:59 --> POST data: []
+DEBUG - 2025-06-27 11:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:50:36 --> Request method: POST
+INFO - 2025-06-27 11:50:36 --> POST data: {"csrf_test_name":"e9fd99e22b2ccf5dc27c8f4af8f7b16a","id_warga":"1","bulan":"Juli","tahun":"2025","nominal":"200000","status":"lunas"}
+DEBUG - 2025-06-27 11:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:54:58 --> Request method: POST
+INFO - 2025-06-27 11:54:58 --> POST data: {"id_warga":"3","bulan":"Januari","tahun":"2025","nominal":"150000","status":"lunas"}
+INFO - 2025-06-27 11:54:58 --> Raw input: id_warga=3&bulan=Januari&tahun=2025&nominal=150000&status=lunas
+DEBUG - 2025-06-27 11:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:55:13 --> Request method: POST
+INFO - 2025-06-27 11:55:13 --> POST data: {"csrf_test_name":"ea29fb294d926619531a2f083e9342b1","id_warga":"21","bulan":"Januari","tahun":"2025","nominal":"10000","status":"lunas"}
+INFO - 2025-06-27 11:55:13 --> Raw input: csrf_test_name=ea29fb294d926619531a2f083e9342b1&id_warga=21&bulan=Januari&tahun=2025&nominal=10000&status=lunas
+DEBUG - 2025-06-27 11:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:56:03 --> Request method: GET
+INFO - 2025-06-27 11:56:03 --> POST data: []
+INFO - 2025-06-27 11:56:03 --> Raw input: 
+DEBUG - 2025-06-27 11:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:56:04 --> Request method: GET
+INFO - 2025-06-27 11:56:04 --> POST data: []
+INFO - 2025-06-27 11:56:04 --> Raw input: 
+DEBUG - 2025-06-27 11:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:56:54 --> Request method: GET
+INFO - 2025-06-27 11:56:54 --> POST data: []
+INFO - 2025-06-27 11:56:54 --> Raw input: 
+DEBUG - 2025-06-27 11:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:58:04 --> Request method: POST
+INFO - 2025-06-27 11:58:04 --> POST data: {"id_warga":"2","bulan":"September","tahun":"2025","nominal":"175000","status":"lunas"}
+INFO - 2025-06-27 11:58:04 --> Raw input: id_warga=2&bulan=September&tahun=2025&nominal=175000&status=lunas
+DEBUG - 2025-06-27 11:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 11:59:52 --> Request method: POST
+INFO - 2025-06-27 11:59:52 --> POST data: {"id_warga":"2","bulan":"Oktober","tahun":"2025","nominal":"180000","status":"lunas"}
+INFO - 2025-06-27 11:59:52 --> Raw input: id_warga=2&bulan=Oktober&tahun=2025&nominal=180000&status=lunas
+DEBUG - 2025-06-27 11:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 12:00:41 --> Request method: POST
+INFO - 2025-06-27 12:00:41 --> POST data: {"id_warga":"1","bulan":"November","tahun":"2025","nominal":"190000","status":"lunas"}
+INFO - 2025-06-27 12:00:41 --> Raw input: id_warga=1&bulan=November&tahun=2025&nominal=190000&status=lunas
+DEBUG - 2025-06-27 12:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 12:02:07 --> Request method: POST
+INFO - 2025-06-27 12:02:07 --> POST data: {"id_warga":"1","bulan":"Desember","tahun":"2025","nominal":"200000","status":"lunas"}
+INFO - 2025-06-27 12:02:07 --> Raw input: id_warga=1&bulan=Desember&tahun=2025&nominal=200000&status=lunas
+INFO - 2025-06-27 12:02:07 --> Method comparison: NO MATCH
+DEBUG - 2025-06-27 12:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 12:05:02 --> Request method: POST
+INFO - 2025-06-27 12:05:02 --> POST data: {"id_warga":"1","bulan":"Januari","tahun":"2026","nominal":"250000","status":"lunas"}
+INFO - 2025-06-27 12:05:02 --> Raw input: id_warga=1&bulan=Januari&tahun=2026&nominal=250000&status=lunas
+INFO - 2025-06-27 12:05:02 --> Method comparison: MATCH
+INFO - 2025-06-27 12:05:02 --> POST data check: HAS DATA
+INFO - 2025-06-27 12:05:02 --> POST data received, proceeding to validation...
+INFO - 2025-06-27 12:05:02 --> Starting validation...
+INFO - 2025-06-27 12:05:02 --> Validation result: PASSED
+INFO - 2025-06-27 12:05:02 --> Validation passed, processing payment...
+INFO - 2025-06-27 12:05:02 --> Saving iuran data: {"id_warga":"1","bulan":"Januari","tahun":"2026","jumlah":"250000","status":"lunas","tanggal":"2025-06-27 12:05:02"}
+INFO - 2025-06-27 12:05:02 --> Saving iuran data: {"id_warga":"1","bulan":"Januari","tahun":"2026","nominal":"250000","jumlah":"250000","status":"lunas","tanggal":"2025-06-27 12:05:02"}
+INFO - 2025-06-27 12:05:02 --> Checking status for transaction: lunas
+INFO - 2025-06-27 12:05:02 --> Creating transaction for lunas payment
+DEBUG - 2025-06-27 12:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 12:05:02 --> Payment successful, redirecting to dashboard
+INFO - 2025-06-27 23:07:52 --> Request method: GET
+INFO - 2025-06-27 23:07:52 --> POST data: []
+INFO - 2025-06-27 23:07:52 --> Raw input: 
+INFO - 2025-06-27 23:07:52 --> Method comparison: NO MATCH
+DEBUG - 2025-06-27 23:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:08:03 --> Request method: POST
+INFO - 2025-06-27 23:08:03 --> POST data: {"csrf_test_name":"0d131e7eedcd2123521929dab026c40a","id_warga":"21","bulan":"Januari","tahun":"2025","nominal":"100000","status":"lunas"}
+INFO - 2025-06-27 23:08:03 --> Raw input: csrf_test_name=0d131e7eedcd2123521929dab026c40a&id_warga=21&bulan=Januari&tahun=2025&nominal=100000&status=lunas
+INFO - 2025-06-27 23:08:03 --> Method comparison: MATCH
+INFO - 2025-06-27 23:08:03 --> POST data check: HAS DATA
+INFO - 2025-06-27 23:08:03 --> POST data received, proceeding to validation...
+INFO - 2025-06-27 23:08:03 --> Starting validation...
+INFO - 2025-06-27 23:08:03 --> Validation result: PASSED
+INFO - 2025-06-27 23:08:03 --> Validation passed, processing payment...
+INFO - 2025-06-27 23:08:03 --> Saving iuran data: {"id_warga":"21","bulan":"Januari","tahun":"2025","jumlah":"100000","status":"lunas","tanggal":"2025-06-27 23:08:03"}
+INFO - 2025-06-27 23:08:03 --> Saving iuran data: {"id_warga":"21","bulan":"Januari","tahun":"2025","nominal":"100000","jumlah":"100000","status":"lunas","tanggal":"2025-06-27 23:08:03"}
+INFO - 2025-06-27 23:08:03 --> Checking status for transaction: lunas
+INFO - 2025-06-27 23:08:03 --> Creating transaction for lunas payment
+DEBUG - 2025-06-27 23:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:08:03 --> Payment successful, redirecting to dashboard
+CRITICAL - 2025-06-27 23:09:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/hasil.php"
+[Method: POST, Route: laporan/proses]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/hasil.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/hasil', [], true)
+ 3 APPPATH\Controllers\Laporan.php(38): view('laporan/hasil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->proses()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-27 23:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 23:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:19:19 --> Request method: GET
+INFO - 2025-06-27 23:19:19 --> POST data: []
+INFO - 2025-06-27 23:19:19 --> Raw input: 
+INFO - 2025-06-27 23:19:19 --> Method comparison: NO MATCH
+DEBUG - 2025-06-27 23:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-27 23:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:21:11 --> Request method: GET
+INFO - 2025-06-27 23:21:11 --> POST data: []
+INFO - 2025-06-27 23:21:11 --> Raw input: 
+INFO - 2025-06-27 23:21:11 --> Method comparison: NO MATCH
+DEBUG - 2025-06-27 23:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:27:34 --> Request method: GET
+INFO - 2025-06-27 23:27:34 --> POST data: []
+INFO - 2025-06-27 23:27:34 --> Raw input: 
+INFO - 2025-06-27 23:27:34 --> Method comparison: NO MATCH
+DEBUG - 2025-06-27 23:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:30:26 --> Request method: GET
+INFO - 2025-06-27 23:30:26 --> POST data: []
+INFO - 2025-06-27 23:30:26 --> Raw input: 
+INFO - 2025-06-27 23:30:26 --> Method comparison: NO MATCH
+DEBUG - 2025-06-27 23:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:31:20 --> Request method: GET
+INFO - 2025-06-27 23:31:20 --> POST data: []
+INFO - 2025-06-27 23:31:20 --> Raw input: 
+INFO - 2025-06-27 23:31:20 --> Method comparison: NO MATCH
+DEBUG - 2025-06-27 23:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:34:36 --> Request method: GET
+INFO - 2025-06-27 23:34:36 --> POST data: []
+INFO - 2025-06-27 23:34:36 --> Raw input: 
+INFO - 2025-06-27 23:34:36 --> Method comparison: NO MATCH
+DEBUG - 2025-06-27 23:34:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:35:43 --> Request method: GET
+INFO - 2025-06-27 23:35:43 --> POST data: []
+INFO - 2025-06-27 23:35:43 --> Raw input: 
+INFO - 2025-06-27 23:35:43 --> Method comparison: NO MATCH
+DEBUG - 2025-06-27 23:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-27 23:36:14 --> Request method: POST
+INFO - 2025-06-27 23:36:14 --> POST data: {"csrf_test_name":"0d131e7eedcd2123521929dab026c40a","id_warga":"20","bulan":"Januari","tahun":"2025","nominal":"10000","status":"lunas"}
+INFO - 2025-06-27 23:36:14 --> Raw input: csrf_test_name=0d131e7eedcd2123521929dab026c40a&id_warga=20&bulan=Januari&tahun=2025&nominal=10000&status=lunas
+INFO - 2025-06-27 23:36:14 --> Method comparison: MATCH
+INFO - 2025-06-27 23:36:14 --> POST data check: HAS DATA
+INFO - 2025-06-27 23:36:14 --> POST data received, proceeding to validation...
+INFO - 2025-06-27 23:36:14 --> Starting validation...
+INFO - 2025-06-27 23:36:14 --> Validation result: PASSED
+INFO - 2025-06-27 23:36:14 --> Validation passed, processing payment...

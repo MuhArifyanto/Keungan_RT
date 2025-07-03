@@ -1,0 +1,237 @@
+ERROR - 2025-06-25 07:00:49 --> mysqli_sql_exception: Unknown column 'transaksi.id_user' in 'on clause' in C:\xampp.8.2\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp.8.2\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp.8.2\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp.8.2\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp.8.2\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp.8.2\htdocs\keuangan_rt\app\Models\TransaksiModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp.8.2\htdocs\keuangan_rt\app\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+#6 C:\xampp.8.2\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+#7 C:\xampp.8.2\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp.8.2\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp.8.2\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp.8.2\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp.8.2\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp.8.2\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp.8.2\\ht...')
+#13 {main}
+CRITICAL - 2025-06-25 07:00:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'transaksi.id_user' in 'on clause'
+[Method: GET, Route: transaksi/riwayat]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `warga`.`nama` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga`
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `tanggal` DESC', [], false)
+ 2 APPPATH\Models\TransaksiModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp.8.2\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-25 07:00:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'transaksi.id_user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi`.*, `warga`.`nama` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga`
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `tanggal` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi`.*, `warga`.`nama` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga`
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `warga`.`nama` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga`
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `tanggal` DESC', [], false)
+ 4 APPPATH\Models\TransaksiModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp.8.2\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-25 07:00:49 --> [Caused by] mysqli_sql_exception: Unknown column 'transaksi.id_user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `transaksi`.*, `warga`.`nama` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga`
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `tanggal` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi`.*, `warga`.`nama` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga`
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi`.*, `warga`.`nama` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga`
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `tanggal` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `warga`.`nama` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga`
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `tanggal` DESC', [], false)
+ 5 APPPATH\Models\TransaksiModel.php(70): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp.8.2\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-25 07:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:24:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-25 07:25:18 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in C:\xampp.8.2\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp.8.2\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp.8.2\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp.8.2\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp.8.2\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp.8.2\htdocs\keuangan_rt\system\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp.8.2\htdocs\keuangan_rt\system\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('admin@tokoku.co...', 'users.email', Array)
+#6 C:\xampp.8.2\htdocs\keuangan_rt\system\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@tokoku.co...', 'users.email', Array, NULL, 'email')
+#7 C:\xampp.8.2\htdocs\keuangan_rt\system\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@tokoku.co...', Array, Array, 'email')
+#8 C:\xampp.8.2\htdocs\keuangan_rt\system\Controller.php(138): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp.8.2\htdocs\keuangan_rt\app\Controllers\Auth.php(24): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp.8.2\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Auth->saveRegister()
+#11 C:\xampp.8.2\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#12 C:\xampp.8.2\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp.8.2\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp.8.2\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#15 C:\xampp.8.2\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#16 C:\xampp.8.2\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp.8.2\\ht...')
+#17 {main}
+CRITICAL - 2025-06-25 07:25:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'email' in 'where clause'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('admin@tokoku.com', 'users.email', [...])
+ 4 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@tokoku.com', 'users.email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@tokoku.com', [...], [...], 'email')
+ 6 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\Auth.php(24): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->saveRegister()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp.8.2\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-25 07:25:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'admin@tokoku.com\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'admin@tokoku.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('admin@tokoku.com', 'users.email', [...])
+ 6 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@tokoku.com', 'users.email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@tokoku.com', [...], [...], 'email')
+ 8 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Auth.php(24): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->saveRegister()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp.8.2\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-25 07:25:18 --> [Caused by] mysqli_sql_exception: Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'admin@tokoku.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'admin@tokoku.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'admin@tokoku.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\StrictRules\Rules.php(187): CodeIgniter\Validation\Rules->is_unique('admin@tokoku.com', 'users.email', [...])
+ 7 SYSTEMPATH\Validation\Validation.php(337): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@tokoku.com', 'users.email', [...], null, 'email')
+ 8 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@tokoku.com', [...], [...], 'email')
+ 9 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+10 APPPATH\Controllers\Auth.php(24): CodeIgniter\Controller->validate([...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->saveRegister()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp.8.2\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-25 07:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-25 07:37:15 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UserModel::getUserByUsername
+[Method: POST, Route: login]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\AuthController.php(22): CodeIgniter\Model->__call('getUserByUsername', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->doLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp.8.2\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-25 07:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 07:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 08:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 09:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 09:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 09:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 09:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 09:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 09:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-25 10:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,510 @@
+CRITICAL - 2025-07-01 07:53:08 --> ErrorException: Undefined array key "07"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Dashboard.php on line 1904.
+ 1 APPPATH\Controllers\Dashboard.php(1904): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "07"', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Controllers\\Dashboard.php', 1904)
+ 2 APPPATH\Controllers\Dashboard.php(67): App\Controllers\Dashboard->getMonthlyIuranData('07', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 07:54:15 --> ErrorException: Undefined array key "07"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Dashboard.php on line 1904.
+ 1 APPPATH\Controllers\Dashboard.php(1904): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "07"', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Controllers\\Dashboard.php', 1904)
+ 2 APPPATH\Controllers\Dashboard.php(67): App\Controllers\Dashboard->getMonthlyIuranData('07', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+INFO - 2025-07-01 07:54:26 --> Request method: GET
+INFO - 2025-07-01 07:54:26 --> POST data: []
+INFO - 2025-07-01 07:54:26 --> Raw input: 
+INFO - 2025-07-01 07:54:26 --> Method comparison: NO MATCH
+DEBUG - 2025-07-01 07:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 07:54:46 --> Request method: POST
+INFO - 2025-07-01 07:54:46 --> POST data: {"csrf_test_name":"dfc0d751007d87937f1ffd110e8019a9","id_warga":"21","bulan":"Juli","tahun":"2025","nominal":"20000","status":"lunas"}
+INFO - 2025-07-01 07:54:46 --> Raw input: csrf_test_name=dfc0d751007d87937f1ffd110e8019a9&id_warga=21&bulan=Juli&tahun=2025&nominal=20000&status=lunas
+INFO - 2025-07-01 07:54:46 --> Method comparison: MATCH
+INFO - 2025-07-01 07:54:46 --> POST data check: HAS DATA
+INFO - 2025-07-01 07:54:46 --> POST data received, proceeding to validation...
+INFO - 2025-07-01 07:54:46 --> Starting validation...
+INFO - 2025-07-01 07:54:46 --> Validation result: PASSED
+INFO - 2025-07-01 07:54:46 --> Validation passed, processing payment...
+INFO - 2025-07-01 14:54:46 --> Payment timestamp: 2025-07-01 14:54:46 (timezone: Asia/Jakarta)
+INFO - 2025-07-01 14:54:46 --> Saving iuran data: {"id_warga":"21","bulan":"Juli","tahun":"2025","jumlah":"20000","status":"lunas","tanggal":"2025-07-01 14:54:46"}
+INFO - 2025-07-01 14:54:46 --> Saving iuran data: {"id_warga":"21","bulan":"Juli","tahun":"2025","nominal":"20000","jumlah":"20000","status":"lunas","tanggal":"2025-07-01 14:54:46"}
+INFO - 2025-07-01 14:54:46 --> Checking status for transaction: lunas
+INFO - 2025-07-01 14:54:46 --> Creating transaction for lunas payment
+DEBUG - 2025-07-01 14:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 14:54:46 --> Creating transaction with data: {"tanggal":"2025-07-01 14:54:46","jenis":"masuk","jumlah":"20000","keterangan":"Pembayaran iuran Juli 2025 - Jokowi","id_user":"1","id_warga":"21"}
+INFO - 2025-07-01 14:54:46 --> Transaction created successfully with ID: 88
+INFO - 2025-07-01 14:54:46 --> Payment successful, redirecting to dashboard
+CRITICAL - 2025-07-01 07:54:46 --> ErrorException: Undefined array key "07"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Dashboard.php on line 1904.
+ 1 APPPATH\Controllers\Dashboard.php(1904): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "07"', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Controllers\\Dashboard.php', 1904)
+ 2 APPPATH\Controllers\Dashboard.php(67): App\Controllers\Dashboard->getMonthlyIuranData('07', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 07:56:37 --> ErrorException: Undefined array key "07"
+[Method: GET, Route: dashboard]
+in APPPATH\Controllers\Dashboard.php on line 1904.
+ 1 APPPATH\Controllers\Dashboard.php(1904): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "07"', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Controllers\\Dashboard.php', 1904)
+ 2 APPPATH\Controllers\Dashboard.php(67): App\Controllers\Dashboard->getMonthlyIuranData('07', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-01 08:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-01 08:43:04 --> mysqli_sql_exception: Column 'id_warga' cannot be null in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\app\Controllers\transaksi.php(233): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+#6 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-07-01 08:43:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+[Method: GET, Route: transaksi/add-sample]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 2 APPPATH\Controllers\transaksi.php(233): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 08:43:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:43:04\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:43:04\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 4 APPPATH\Controllers\transaksi.php(233): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 08:43:04 --> [Caused by] mysqli_sql_exception: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:43:04\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:43:04\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:43:04\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 5 APPPATH\Controllers\transaksi.php(233): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-01 08:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-01 08:52:21 --> mysqli_sql_exception: Column 'id_warga' cannot be null in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\app\Controllers\transaksi.php(227): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+#6 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-07-01 08:52:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+[Method: GET, Route: transaksi/add-sample]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 2 APPPATH\Controllers\transaksi.php(227): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 08:52:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:52:21\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:52:21\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 4 APPPATH\Controllers\transaksi.php(227): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 08:52:21 --> [Caused by] mysqli_sql_exception: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:52:21\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:52:21\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:52:21\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 5 APPPATH\Controllers\transaksi.php(227): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-01 08:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 08:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-01 08:56:11 --> mysqli_sql_exception: Column 'id_warga' cannot be null in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\app\Controllers\transaksi.php(227): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+#6 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#7 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-07-01 08:56:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+[Method: GET, Route: transaksi/add-sample]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 2 APPPATH\Controllers\transaksi.php(227): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 08:56:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:56:11\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:56:11\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 4 APPPATH\Controllers\transaksi.php(227): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 08:56:11 --> [Caused by] mysqli_sql_exception: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:56:11\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:56:11\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-29 08:56:11\', \'keluar\', 25000, \'Pembelian alat kebersihan\', 1, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 5 APPPATH\Controllers\transaksi.php(227): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->addSample()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-01 09:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-01 09:02:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `tran...' at line 1 in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\app\Models\TransaksiModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\app\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+#6 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+#7 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-01 09:02:23 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `tran...' at line 1
+[Method: GET, Route: transaksi/riwayat]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC', [], false)
+ 2 APPPATH\Models\TransaksiModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 09:02:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `tran...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC', [], false)
+ 4 APPPATH\Models\TransaksiModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 09:02:23 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `tran...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC', [], false)
+ 5 APPPATH\Models\TransaksiModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+ERROR - 2025-07-01 09:04:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `tran...' at line 1 in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `transak...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transak...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transak...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transak...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\app\Models\TransaksiModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\keuangan_rt\app\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+#6 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+#7 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+#8 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-07-01 09:04:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `tran...' at line 1
+[Method: GET, Route: transaksi/riwayat]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC', [], false)
+ 2 APPPATH\Models\TransaksiModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 09:04:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `tran...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC', [], false)
+ 4 APPPATH\Models\TransaksiModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-07-01 09:04:51 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `tran...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `transaksi`.*, `CASE WHEN transaksi`.`id_warga = 0 THEN "Sistem" WHEN warga`.`nama IS NOT NULL THEN warga`.`nama ELSE "-" END` as `nama_warga`, `user`.`nama` as `nama_user`
+FROM `transaksi`
+LEFT JOIN `warga` ON `warga`.`warga_id` = `transaksi`.`id_warga` AND `transaksi`.`id_warga` > 0
+LEFT JOIN `user` ON `user`.`id_user` = `transaksi`.`id_user`
+ORDER BY `transaksi`.`tanggal` DESC', [], false)
+ 5 APPPATH\Models\TransaksiModel.php(74): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\transaksi.php(27): App\Models\TransaksiModel->getTransaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->riwayat()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-01 09:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 09:44:52 --> Request method: GET
+INFO - 2025-07-01 09:44:52 --> POST data: []
+INFO - 2025-07-01 09:44:52 --> Raw input: 
+INFO - 2025-07-01 09:44:52 --> Method comparison: NO MATCH
+DEBUG - 2025-07-01 09:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 09:45:04 --> Request method: GET
+INFO - 2025-07-01 09:45:04 --> POST data: []
+INFO - 2025-07-01 09:45:04 --> Raw input: 
+INFO - 2025-07-01 09:45:04 --> Method comparison: NO MATCH
+DEBUG - 2025-07-01 09:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 09:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 10:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-01 10:18:33 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\user\profile.php on line 332.
+ 1 APPPATH\Views\user\profile.php(332): substr(null, 0, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\user.php(19): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-07-01 10:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 10:19:14 --> Request method: GET
+INFO - 2025-07-01 10:19:14 --> POST data: []
+INFO - 2025-07-01 10:19:14 --> Raw input: 
+INFO - 2025-07-01 10:19:14 --> Method comparison: NO MATCH
+DEBUG - 2025-07-01 10:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 10:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 10:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-07-01 10:52:52 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\user\profile.php on line 332.
+ 1 APPPATH\Views\user\profile.php(332): substr(null, 0, 1)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\user\\profile.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('user/profile', [], true)
+ 5 APPPATH\Controllers\user.php(19): view('user/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')

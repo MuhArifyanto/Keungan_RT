@@ -1,0 +1,372 @@
+INFO - 2025-06-28 06:36:14 --> Saving iuran data: {"id_warga":"20","bulan":"Januari","tahun":"2025","jumlah":"10000","status":"lunas","tanggal":"2025-06-28 06:36:14"}
+INFO - 2025-06-28 06:36:14 --> Saving iuran data: {"id_warga":"20","bulan":"Januari","tahun":"2025","nominal":"10000","jumlah":"10000","status":"lunas","tanggal":"2025-06-28 06:36:14"}
+INFO - 2025-06-28 06:36:14 --> Checking status for transaction: lunas
+INFO - 2025-06-28 06:36:14 --> Creating transaction for lunas payment
+DEBUG - 2025-06-28 06:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 06:36:14 --> Creating transaction with data: {"tanggal":"2025-06-28 06:36:14","jenis":"masuk","jumlah":"10000","keterangan":"Pembayaran iuran Januari 2025 - jojo","id_user":"1","id_warga":"20"}
+INFO - 2025-06-28 06:36:14 --> Transaction created successfully with ID: 7
+INFO - 2025-06-28 06:36:14 --> Payment successful, redirecting to dashboard
+INFO - 2025-06-28 00:00:59 --> Request method: GET
+INFO - 2025-06-28 00:00:59 --> POST data: []
+INFO - 2025-06-28 00:00:59 --> Raw input: 
+INFO - 2025-06-28 00:00:59 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 00:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 00:01:54 --> Request method: GET
+INFO - 2025-06-28 00:01:54 --> POST data: []
+INFO - 2025-06-28 00:01:54 --> Raw input: 
+INFO - 2025-06-28 00:01:54 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 00:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 02:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 02:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:24:56 --> Request method: GET
+INFO - 2025-06-28 02:24:56 --> POST data: []
+INFO - 2025-06-28 02:24:56 --> Raw input: 
+INFO - 2025-06-28 02:24:56 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 02:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:25:12 --> Request method: POST
+INFO - 2025-06-28 02:25:12 --> POST data: {"csrf_test_name":"e43ff0e0b577e385ca5ab301657db5b6","id_warga":"22","bulan":"Juni","tahun":"2025","nominal":"10000","status":"lunas"}
+INFO - 2025-06-28 02:25:12 --> Raw input: csrf_test_name=e43ff0e0b577e385ca5ab301657db5b6&id_warga=22&bulan=Juni&tahun=2025&nominal=10000&status=lunas
+INFO - 2025-06-28 02:25:12 --> Method comparison: MATCH
+INFO - 2025-06-28 02:25:12 --> POST data check: HAS DATA
+INFO - 2025-06-28 02:25:12 --> POST data received, proceeding to validation...
+INFO - 2025-06-28 02:25:12 --> Starting validation...
+INFO - 2025-06-28 02:25:12 --> Validation result: PASSED
+INFO - 2025-06-28 02:25:12 --> Validation passed, processing payment...
+INFO - 2025-06-28 09:25:12 --> Payment timestamp: 2025-06-28 09:25:12 (timezone: Asia/Jakarta)
+INFO - 2025-06-28 09:25:12 --> Saving iuran data: {"id_warga":"22","bulan":"Juni","tahun":"2025","jumlah":"10000","status":"lunas","tanggal":"2025-06-28 09:25:12"}
+INFO - 2025-06-28 09:25:12 --> Saving iuran data: {"id_warga":"22","bulan":"Juni","tahun":"2025","nominal":"10000","jumlah":"10000","status":"lunas","tanggal":"2025-06-28 09:25:12"}
+INFO - 2025-06-28 09:25:12 --> Checking status for transaction: lunas
+INFO - 2025-06-28 09:25:12 --> Creating transaction for lunas payment
+DEBUG - 2025-06-28 09:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 09:25:12 --> Creating transaction with data: {"tanggal":"2025-06-28 09:25:12","jenis":"masuk","jumlah":"10000","keterangan":"Pembayaran iuran Juni 2025 - asep","id_user":"1","id_warga":"22"}
+INFO - 2025-06-28 09:25:12 --> Transaction created successfully with ID: 13
+INFO - 2025-06-28 09:25:12 --> Payment successful, redirecting to dashboard
+INFO - 2025-06-28 02:26:06 --> Request method: GET
+INFO - 2025-06-28 02:26:06 --> POST data: []
+INFO - 2025-06-28 02:26:06 --> Raw input: 
+INFO - 2025-06-28 02:26:06 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 02:26:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:30:35 --> Request method: GET
+INFO - 2025-06-28 02:30:35 --> POST data: []
+INFO - 2025-06-28 02:30:35 --> Raw input: 
+INFO - 2025-06-28 02:30:35 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 02:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:31:28 --> Request method: GET
+INFO - 2025-06-28 02:31:28 --> POST data: []
+INFO - 2025-06-28 02:31:28 --> Raw input: 
+INFO - 2025-06-28 02:31:28 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 02:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:34:22 --> Request method: GET
+INFO - 2025-06-28 02:34:22 --> POST data: []
+INFO - 2025-06-28 02:34:22 --> Raw input: 
+INFO - 2025-06-28 02:34:22 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 02:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:34:34 --> Request method: GET
+INFO - 2025-06-28 02:34:34 --> POST data: []
+INFO - 2025-06-28 02:34:34 --> Raw input: 
+INFO - 2025-06-28 02:34:34 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 02:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:34:42 --> Request method: POST
+INFO - 2025-06-28 02:34:42 --> POST data: {"csrf_test_name":"e43ff0e0b577e385ca5ab301657db5b6","id_warga":"22","bulan":"Juni","tahun":"2025","nominal":"5000","status":"lunas"}
+INFO - 2025-06-28 02:34:42 --> Raw input: csrf_test_name=e43ff0e0b577e385ca5ab301657db5b6&id_warga=22&bulan=Juni&tahun=2025&nominal=5000&status=lunas
+INFO - 2025-06-28 02:34:42 --> Method comparison: MATCH
+INFO - 2025-06-28 02:34:42 --> POST data check: HAS DATA
+INFO - 2025-06-28 02:34:42 --> POST data received, proceeding to validation...
+INFO - 2025-06-28 02:34:42 --> Starting validation...
+INFO - 2025-06-28 02:34:42 --> Validation result: PASSED
+INFO - 2025-06-28 02:34:42 --> Validation passed, processing payment...
+DEBUG - 2025-06-28 02:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:34:42 --> Request method: GET
+INFO - 2025-06-28 02:34:42 --> POST data: []
+INFO - 2025-06-28 02:34:42 --> Raw input: 
+INFO - 2025-06-28 02:34:42 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 02:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:35:09 --> Request method: GET
+INFO - 2025-06-28 02:35:09 --> POST data: []
+INFO - 2025-06-28 02:35:09 --> Raw input: 
+INFO - 2025-06-28 02:35:09 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 02:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 02:35:14 --> Request method: POST
+INFO - 2025-06-28 02:35:14 --> POST data: {"csrf_test_name":"e43ff0e0b577e385ca5ab301657db5b6","id_warga":"22","bulan":"Januari","tahun":"2025","nominal":"5000","status":"lunas"}
+INFO - 2025-06-28 02:35:14 --> Raw input: csrf_test_name=e43ff0e0b577e385ca5ab301657db5b6&id_warga=22&bulan=Januari&tahun=2025&nominal=5000&status=lunas
+INFO - 2025-06-28 02:35:14 --> Method comparison: MATCH
+INFO - 2025-06-28 02:35:14 --> POST data check: HAS DATA
+INFO - 2025-06-28 02:35:14 --> POST data received, proceeding to validation...
+INFO - 2025-06-28 02:35:14 --> Starting validation...
+INFO - 2025-06-28 02:35:14 --> Validation result: PASSED
+INFO - 2025-06-28 02:35:14 --> Validation passed, processing payment...
+INFO - 2025-06-28 09:35:14 --> Payment timestamp: 2025-06-28 09:35:14 (timezone: Asia/Jakarta)
+INFO - 2025-06-28 09:35:15 --> Saving iuran data: {"id_warga":"22","bulan":"Januari","tahun":"2025","jumlah":"5000","status":"lunas","tanggal":"2025-06-28 09:35:14"}
+INFO - 2025-06-28 09:35:15 --> Saving iuran data: {"id_warga":"22","bulan":"Januari","tahun":"2025","nominal":"5000","jumlah":"5000","status":"lunas","tanggal":"2025-06-28 09:35:14"}
+INFO - 2025-06-28 09:35:15 --> Checking status for transaction: lunas
+INFO - 2025-06-28 09:35:15 --> Creating transaction for lunas payment
+DEBUG - 2025-06-28 09:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 09:35:15 --> Creating transaction with data: {"tanggal":"2025-06-28 09:35:14","jenis":"masuk","jumlah":"5000","keterangan":"Pembayaran iuran Januari 2025 - asep","id_user":"1","id_warga":"22"}
+INFO - 2025-06-28 09:35:15 --> Transaction created successfully with ID: 15
+INFO - 2025-06-28 09:35:15 --> Payment successful, redirecting to dashboard
+CRITICAL - 2025-06-28 02:42:40 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: debugiuran]
+in APPPATH\Controllers\Dashboard.php on line 1116.
+ 1 APPPATH\Controllers\Dashboard.php(1116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Controllers\\Dashboard.php', 1116)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->debugiuran()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+INFO - 2025-06-28 02:43:35 --> Request method: GET
+INFO - 2025-06-28 02:43:35 --> POST data: []
+INFO - 2025-06-28 02:43:35 --> Raw input: 
+INFO - 2025-06-28 02:43:35 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 02:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-28 02:43:41 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: debugiuran]
+in APPPATH\Controllers\Dashboard.php on line 1116.
+ 1 APPPATH\Controllers\Dashboard.php(1116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Controllers\\Dashboard.php', 1116)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->debugiuran()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+INFO - 2025-06-28 03:10:27 --> Request method: GET
+INFO - 2025-06-28 03:10:27 --> POST data: []
+INFO - 2025-06-28 03:10:28 --> Raw input: 
+INFO - 2025-06-28 03:10:28 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 03:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 03:10:51 --> Request method: GET
+INFO - 2025-06-28 03:10:51 --> POST data: []
+INFO - 2025-06-28 03:10:51 --> Raw input: 
+INFO - 2025-06-28 03:10:51 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 03:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-28 10:17:43 --> ErrorException: Undefined variable $detailStatistikIuran
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 1177.
+ 1 APPPATH\Views\dashboard.php(1177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detailStatistikIuran', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 1177)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(92): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-28 10:21:50 --> ErrorException: Undefined variable $detailStatistikIuran
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 1177.
+ 1 APPPATH\Views\dashboard.php(1177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detailStatistikIuran', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 1177)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(92): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-28 10:26:03 --> ErrorException: Undefined variable $detailStatistikIuran
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 1177.
+ 1 APPPATH\Views\dashboard.php(1177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $detailStatistikIuran', 'C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php', 1177)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\keuangan_rt\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(92): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+INFO - 2025-06-28 03:30:23 --> Request method: GET
+INFO - 2025-06-28 03:30:23 --> POST data: []
+INFO - 2025-06-28 03:30:23 --> Raw input: 
+INFO - 2025-06-28 03:30:23 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 03:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 03:31:28 --> Request method: GET
+INFO - 2025-06-28 03:31:28 --> POST data: []
+INFO - 2025-06-28 03:31:28 --> Raw input: 
+INFO - 2025-06-28 03:31:28 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 03:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 03:31:43 --> Request method: POST
+INFO - 2025-06-28 03:31:43 --> POST data: {"csrf_test_name":"e43ff0e0b577e385ca5ab301657db5b6","id_warga":"21","bulan":"Juni","tahun":"2025","nominal":"20000","status":"lunas"}
+INFO - 2025-06-28 03:31:43 --> Raw input: csrf_test_name=e43ff0e0b577e385ca5ab301657db5b6&id_warga=21&bulan=Juni&tahun=2025&nominal=20000&status=lunas
+INFO - 2025-06-28 03:31:43 --> Method comparison: MATCH
+INFO - 2025-06-28 03:31:43 --> POST data check: HAS DATA
+INFO - 2025-06-28 03:31:43 --> POST data received, proceeding to validation...
+INFO - 2025-06-28 03:31:43 --> Starting validation...
+INFO - 2025-06-28 03:31:43 --> Validation result: PASSED
+INFO - 2025-06-28 03:31:43 --> Validation passed, processing payment...
+INFO - 2025-06-28 10:31:43 --> Payment timestamp: 2025-06-28 10:31:43 (timezone: Asia/Jakarta)
+INFO - 2025-06-28 10:31:44 --> Saving iuran data: {"id_warga":"21","bulan":"Juni","tahun":"2025","jumlah":"20000","status":"lunas","tanggal":"2025-06-28 10:31:43"}
+INFO - 2025-06-28 10:31:44 --> Saving iuran data: {"id_warga":"21","bulan":"Juni","tahun":"2025","nominal":"20000","jumlah":"20000","status":"lunas","tanggal":"2025-06-28 10:31:43"}
+INFO - 2025-06-28 10:31:44 --> Checking status for transaction: lunas
+INFO - 2025-06-28 10:31:44 --> Creating transaction for lunas payment
+DEBUG - 2025-06-28 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 10:31:44 --> Creating transaction with data: {"tanggal":"2025-06-28 10:31:43","jenis":"masuk","jumlah":"20000","keterangan":"Pembayaran iuran Juni 2025 - Jokowi","id_user":"1","id_warga":"21"}
+INFO - 2025-06-28 10:31:44 --> Transaction created successfully with ID: 85
+INFO - 2025-06-28 10:31:44 --> Payment successful, redirecting to dashboard
+DEBUG - 2025-06-28 03:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-28 10:36:44 --> mysqli_sql_exception: Column 'id_warga' cannot be null in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(1588): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->testpengeluaran()
+#6 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-06-28 10:36:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+[Method: GET, Route: testpengeluaran]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 2 APPPATH\Controllers\Dashboard.php(1588): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->testpengeluaran()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-28 10:36:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:36:44\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:36:44\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 4 APPPATH\Controllers\Dashboard.php(1588): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->testpengeluaran()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-28 10:36:44 --> [Caused by] mysqli_sql_exception: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:36:44\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:36:44\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:36:44\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 5 APPPATH\Controllers\Dashboard.php(1588): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->testpengeluaran()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-28 03:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-28 10:37:45 --> mysqli_sql_exception: Column 'id_warga' cannot be null in C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\keuangan_rt\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\keuangan_rt\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\keuangan_rt\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\keuangan_rt\app\Controllers\Dashboard.php(1588): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(933): App\Controllers\Dashboard->testpengeluaran()
+#6 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 C:\xampp\htdocs\keuangan_rt\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\keuangan_rt\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\keuangan_rt\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\keuangan_rt\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\keuangan_rt\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-06-28 10:37:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+[Method: GET, Route: testpengeluaran]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 2 APPPATH\Controllers\Dashboard.php(1588): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->testpengeluaran()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-28 10:37:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:37:45\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:37:45\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 4 APPPATH\Controllers\Dashboard.php(1588): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->testpengeluaran()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+CRITICAL - 2025-06-28 10:37:46 --> [Caused by] mysqli_sql_exception: Column 'id_warga' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:37:45\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:37:45\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (\'2025-06-28 08:37:45\', \'keluar\', 150000, \'Pengeluaran Kebersihan - Pembelian alat kebersihan dan sabun cuci\', 1, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `transaksi` (`tanggal`, `jenis`, `jumlah`, `keterangan`, `id_user`, `id_warga`) VALUES (:tanggal:, :jenis:, :jumlah:, :keterangan:, :id_user:, :id_warga:)', [...], false)
+ 5 APPPATH\Controllers\Dashboard.php(1588): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->testpengeluaran()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\keuangan_rt\\public\\index.php')
+DEBUG - 2025-06-28 03:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 10:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 03:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 11:30:08 --> Request method: GET
+INFO - 2025-06-28 11:30:08 --> POST data: []
+INFO - 2025-06-28 11:30:08 --> Raw input: 
+INFO - 2025-06-28 11:30:08 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 11:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 13:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 13:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 13:25:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 14:27:26 --> Request method: GET
+INFO - 2025-06-28 14:27:26 --> POST data: []
+INFO - 2025-06-28 14:27:26 --> Raw input: 
+INFO - 2025-06-28 14:27:26 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 14:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:20:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-28 15:22:24 --> Request method: GET
+INFO - 2025-06-28 15:22:24 --> POST data: []
+INFO - 2025-06-28 15:22:24 --> Raw input: 
+INFO - 2025-06-28 15:22:24 --> Method comparison: NO MATCH
+DEBUG - 2025-06-28 15:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-28 15:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
