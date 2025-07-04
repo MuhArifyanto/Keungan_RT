@@ -60,6 +60,9 @@ ERD berikut menggambarkan relasi antar tabel di database KASRT:
 
 ![WhatsApp Image 2025-07-03 at 21 33 09](https://github.com/user-attachments/assets/82bbf40b-0dd8-47d4-a532-b70f0a050269)
 
+USE CASE 
+![WhatsApp Image 2025-07-04 at 18 10 19 (1)](https://github.com/user-attachments/assets/4fc10529-0a5d-405c-b19d-cc1a3801d9de)
+
 
 📌 Penjelasan:
 
