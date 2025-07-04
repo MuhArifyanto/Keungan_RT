@@ -48,7 +48,8 @@ Setiap pengguna dapat melihat dan memperbarui profil mereka. Fitur logout memast
 
 ERD berikut menggambarkan relasi antar tabel di database KASRT:
 
-![ERD](docs/erd.png)
+![WhatsApp Image 2025-07-03 at 21 33 09](https://github.com/user-attachments/assets/82bbf40b-0dd8-47d4-a532-b70f0a050269)
+
 
 📌 Penjelasan:
 
