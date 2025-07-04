@@ -127,45 +127,6 @@ Menampilkan informasi akun pengguna serta opsi untuk memperbarui data profil dan
 
 ---
 
-## 📦 Instalasi Lokal (Development)
-
-1. Clone repositori:
-
-   ```bash
-   git clone https://github.com/username/kasrt.git
-   cd kasrt
-   ```
-
-2. Import database MySQL (file .sql tersedia di /database)
-
-3. Konfigurasi koneksi database:
-   Buka /app/Config/Database.php dan sesuaikan:
-
-   ```php
-   public $default = [
-     'hostname' => 'localhost',
-     'username' => 'root',
-     'password' => '',
-     'database' => 'kasrt',
-     ...
-   ];
-   ```
-
-4. Jalankan dengan:
-
-   ```bash
-   php spark serve
-   ```
-
-5. Akses melalui:
-   [http://localhost:8080](http://localhost:8080)
-
----
-
-## 🤝 Kontribusi
-
-Pull request sangat diterima! Silakan fork repository ini dan kirimkan saran atau fitur baru untuk pengembangan bersama.
-
 
 ## Server Requirements
 
