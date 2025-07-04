@@ -1,44 +1,152 @@
-# CodeIgniter 4 Framework
+# 💼 KASRT — Aplikasi Manajemen Keuangan RT
 
-## What is CodeIgniter?
+KASRT adalah aplikasi berbasis web menggunakan CodeIgniter 4 yang dirancang untuk membantu pengurus RT dalam mencatat keuangan secara digital. Aplikasi ini mempermudah proses pencatatan iuran, pengeluaran, pembuatan laporan, dan pengelolaan data warga secara efisien dan transparan.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+---
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 📌 Fitur Utama
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+✅ Autentikasi Pengguna (Login & Register)
+Digunakan untuk mengamankan akses ke sistem. Pengurus RT harus login menggunakan akun terdaftar untuk mengakses seluruh fitur aplikasi.
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+✅ Manajemen Data Warga (Tambah, Edit, Hapus)
+Fitur ini memungkinkan admin untuk mengelola seluruh data warga RT, termasuk nama, alamat, nomor telepon, dan status kepemilikan rumah.
 
-## Important Change with index.php
+✅ Pencatatan Pembayaran Iuran
+Setiap pembayaran iuran kas warga dapat dicatat berdasarkan nama warga, bulan pembayaran, dan nominal. Sistem juga dapat mencatat status pembayaran apakah sudah atau belum.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+✅ Input Pengeluaran Kas
+Fitur ini digunakan untuk mencatat pengeluaran yang dilakukan oleh RT seperti pembelian barang, pembayaran listrik, atau kegiatan sosial. Setiap pengeluaran dicatat dengan keterangan dan nominal.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+✅ Dashboard Ringkasan Keuangan
+Menampilkan informasi ringkas seperti total saldo kas, jumlah warga, total iuran bulan ini, serta shortcut ke fitur penting lainnya. Ditampilkan secara visual agar mudah dipahami.
 
-**Please** read the user guide for a better explanation of how CI4 works!
+✅ Laporan Bulanan (Filter Periode)
+Laporan keuangan dapat difilter berdasarkan bulan atau tahun. Laporan ini menampilkan semua transaksi pemasukan dan pengeluaran serta total saldo akhir.
 
-## Repository Management
+✅ Cetak Laporan ke PDF
+Laporan keuangan yang ditampilkan bisa langsung dicetak atau diekspor dalam format PDF. Cocok digunakan saat rapat warga atau pelaporan ke pihak lain.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+✅ Halaman Profil dan Logout
+Setiap pengguna dapat melihat dan memperbarui profil mereka. Fitur logout memastikan keamanan akun pengguna setelah selesai digunakan.
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+---
 
-## Contributing
+## 📂 Struktur Direktori Penting
 
-We welcome contributions from the community.
+| Folder/Path      | Fungsi                                |
+| ---------------- | ------------------------------------- |
+| /app/Controllers | Mengatur alur halaman & aksi pengguna |
+| /app/Models      | Akses database (CRUD, filter, dsb)    |
+| /app/Views       | Tampilan web menggunakan Bootstrap    |
+| /public/         | File statis: CSS, gambar, JS          |
+| /app/Config      | Pengaturan sistem & database          |
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+---
+
+## 🧐 Entity Relationship Diagram (ERD)
+
+ERD berikut menggambarkan relasi antar tabel di database KASRT:
+
+![ERD](docs/erd.png)
+
+📌 Penjelasan:
+
+* Tabel warga: menyimpan data penduduk RT
+* Tabel transaksi: menyimpan catatan pemasukan/pengeluaran
+* Tabel kategori: untuk mengelompokkan jenis transaksi
+* Tabel users: akun login admin/pengurus
+
+---
+
+## 📱 UI/UX Mockup
+
+Mockup antarmuka aplikasi yang dirancang menggunakan layout responsif dan sederhana:
+
+![Mockup](docs/mockup.png)
+
+📌 Penjelasan:
+
+* Tampilan clean dan mudah digunakan oleh pengurus RT
+* Warna netral dan tipografi jelas
+* Navigasi utama di bagian atas atau sidebar
+
+---
+
+## 🦾 Storyboard Alur Sistem
+
+Storyboard menggambarkan alur proses penggunaan aplikasi oleh pengurus RT:
+
+![Storyboard](docs/storyboard.png)
+
+📌 Penjelasan:
+
+1. Pengurus login ke sistem
+2. Melihat dashboard ringkasan
+3. Menambah data warga baru
+4. Mencatat pembayaran atau pengeluaran
+5. Melihat dan mencetak laporan
+
+---
+
+## 🖼️ Screenshot Aplikasi
+
+Berikut adalah beberapa tampilan antarmuka website beserta penjelasannya:
+
+Berikut adalah beberapa tampilan antarmuka website beserta penjelasannya:
+
+| Halaman        | Gambar                                     | Penjelasan                                                                                                         |
+| -------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| Login          | ![](screenshots/login.png)                 | Halaman login untuk masuk ke sistem. Pengguna memasukkan email dan password untuk mengakses sistem.                |
+| Register       | ![](screenshots/register.png)              | Halaman pendaftaran akun untuk pengurus RT baru. Form terdiri dari nama, email, dan password.                      |
+| Home/Dashboard | ![](screenshots/home.png)                  | Menampilkan ringkasan saldo kas, total warga, dan total iuran bulan ini. Navigasi ke fitur utama tersedia di sini. |
+| Data Warga     | ![](screenshots/daftar_warga.png)          | Halaman untuk melihat dan mengelola daftar warga. Dilengkapi tombol edit dan hapus untuk setiap warga.             |
+| Pembayaran     | ![](screenshots/pembayaran.png)            | Form pencatatan pembayaran iuran kas oleh warga berdasarkan nama dan bulan.                                        |
+| Buat Laporan   | ![](screenshots/buat_laporan_keuangan.png) | Form untuk memilih tanggal dan jenis transaksi dalam menyusun laporan keuangan RT.                                 |
+| Cetak Laporan  | ![](screenshots/cetak_laporan.png)         | Tampilan laporan yang bisa dicetak ke PDF, mencakup total pemasukan dan pengeluaran.                               |
+| Halaman Profil | ![](screenshots/profile.png)               | Menampilkan informasi akun pengguna serta opsi untuk memperbarui data profil dan logout.                           |
+
+---
+
+## 📦 Instalasi Lokal (Development)
+
+1. Clone repositori:
+
+   ```bash
+   git clone https://github.com/username/kasrt.git
+   cd kasrt
+   ```
+
+2. Import database MySQL (file .sql tersedia di /database)
+
+3. Konfigurasi koneksi database:
+   Buka /app/Config/Database.php dan sesuaikan:
+
+   ```php
+   public $default = [
+     'hostname' => 'localhost',
+     'username' => 'root',
+     'password' => '',
+     'database' => 'kasrt',
+     ...
+   ];
+   ```
+
+4. Jalankan dengan:
+
+   ```bash
+   php spark serve
+   ```
+
+5. Akses melalui:
+   [http://localhost:8080](http://localhost:8080)
+
+---
+
+## 🤝 Kontribusi
+
+Pull request sangat diterima! Silakan fork repository ini dan kirimkan saran atau fitur baru untuk pengembangan bersama.
+
 
 ## Server Requirements
 
