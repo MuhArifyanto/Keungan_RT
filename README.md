@@ -98,12 +98,12 @@ Berikut adalah beberapa tampilan antarmuka website beserta penjelasannya:
 
 1. Halaman Login
 
-Halaman login untuk masuk ke sistem. Pengguna memasukkan email dan password untuk mengakses sistem.
+- Halaman login untuk masuk ke sistem. Pengguna memasukkan email dan password untuk mengakses sistem.
 ![{0BEB343E-7E28-43C8-86F8-DFFE7E9A011E}](https://github.com/user-attachments/assets/0958ffe5-d4ac-4309-a150-97124484b2df)
 
 2. Halaman Register
 
-Halaman pendaftaran akun untuk pengurus RT baru. Form terdiri dari nama, email, dan password.
+- Halaman pendaftaran akun untuk pengurus RT baru. Form terdiri dari nama, email, dan password.
 ![{52D9698D-1873-4C86-AD63-C2929C04F82E}](https://github.com/user-attachments/assets/615581ec-9ef7-412f-b889-1825ace74a40)
 
 3. Home / Dashboard
@@ -113,17 +113,17 @@ Menampilkan ringkasan saldo kas, total warga, dan total iuran bulan ini. Navigas
 
 4. Halaman Data Warga
 
-Halaman untuk melihat dan mengelola daftar warga. Dilengkapi tombol edit dan hapus untuk setiap warga.
+- Halaman untuk melihat dan mengelola daftar warga. Dilengkapi tombol edit dan hapus untuk setiap warga.
 ![{F810E92A-A268-469C-BFAB-2EAA82BC1DF1}](https://github.com/user-attachments/assets/953648de-853b-402a-b233-8279189bf0ec)
 
 5. Form Pembayaran
 
-Form pencatatan pembayaran iuran kas oleh warga berdasarkan nama dan bulan.
+- Form pencatatan pembayaran iuran kas oleh warga berdasarkan nama dan bulan.
 ![{BBE026E1-A7E1-4378-B2EE-6565780A0D66}](https://github.com/user-attachments/assets/8e575833-4cf0-47de-a415-feaa9d15cc7c)
 
 6. Buat Laporan Keuangan
 
-Form untuk memilih tanggal dan jenis transaksi dalam menyusun laporan keuangan RT.
+- Form untuk memilih tanggal dan jenis transaksi dalam menyusun laporan keuangan RT.
 ![{544FD4EE-BDD3-48F5-BA65-E2F84F4A65E3}](https://github.com/user-attachments/assets/826a0a1a-6177-48aa-bcb2-6908077c27e3)
 
 7. Halaman Hasil Laporan Keuangan
