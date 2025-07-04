@@ -93,18 +93,37 @@ Storyboard menggambarkan alur proses penggunaan aplikasi oleh pengurus RT:
 
 Berikut adalah beberapa tampilan antarmuka website beserta penjelasannya:
 
-Berikut adalah beberapa tampilan antarmuka website beserta penjelasannya:
+1. Halaman Login
 
-| Halaman        | Gambar                                     | Penjelasan                                                                                                         |
-| -------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| Login          | ![](screenshots/login.png)                 | Halaman login untuk masuk ke sistem. Pengguna memasukkan email dan password untuk mengakses sistem.                |
-| Register       | ![](screenshots/register.png)              | Halaman pendaftaran akun untuk pengurus RT baru. Form terdiri dari nama, email, dan password.                      |
-| Home/Dashboard | ![](screenshots/home.png)                  | Menampilkan ringkasan saldo kas, total warga, dan total iuran bulan ini. Navigasi ke fitur utama tersedia di sini. |
-| Data Warga     | ![](screenshots/daftar_warga.png)          | Halaman untuk melihat dan mengelola daftar warga. Dilengkapi tombol edit dan hapus untuk setiap warga.             |
-| Pembayaran     | ![](screenshots/pembayaran.png)            | Form pencatatan pembayaran iuran kas oleh warga berdasarkan nama dan bulan.                                        |
-| Buat Laporan   | ![](screenshots/buat_laporan_keuangan.png) | Form untuk memilih tanggal dan jenis transaksi dalam menyusun laporan keuangan RT.                                 |
-| Cetak Laporan  | ![](screenshots/cetak_laporan.png)         | Tampilan laporan yang bisa dicetak ke PDF, mencakup total pemasukan dan pengeluaran.                               |
-| Halaman Profil | ![](screenshots/profile.png)               | Menampilkan informasi akun pengguna serta opsi untuk memperbarui data profil dan logout.                           |
+Halaman login untuk masuk ke sistem. Pengguna memasukkan email dan password untuk mengakses sistem.
+
+2. Halaman Register
+
+Halaman pendaftaran akun untuk pengurus RT baru. Form terdiri dari nama, email, dan password.
+
+3. Home / Dashboard
+
+Menampilkan ringkasan saldo kas, total warga, dan total iuran bulan ini. Navigasi ke fitur utama tersedia di sini.
+
+4. Halaman Data Warga
+
+Halaman untuk melihat dan mengelola daftar warga. Dilengkapi tombol edit dan hapus untuk setiap warga.
+
+5. Form Pembayaran
+
+Form pencatatan pembayaran iuran kas oleh warga berdasarkan nama dan bulan.
+
+6. Buat Laporan Keuangan
+
+Form untuk memilih tanggal dan jenis transaksi dalam menyusun laporan keuangan RT.
+
+7. Halaman Cetak Laporan
+
+Tampilan laporan yang bisa dicetak ke PDF, mencakup total pemasukan dan pengeluaran.
+
+8. Halaman Profil
+
+Menampilkan informasi akun pengguna serta opsi untuk memperbarui data profil dan logout.
 
 ---
 
