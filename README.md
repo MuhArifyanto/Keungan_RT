@@ -64,7 +64,8 @@ ERD berikut menggambarkan relasi antar tabel di database KASRT:
 
 Mockup antarmuka aplikasi yang dirancang menggunakan layout responsif dan sederhana:
 
-![Mockup](docs/mockup.png)
+![WhatsApp Image 2025-07-03 at 22 27 55](https://github.com/user-attachments/assets/8551d2d4-854b-4cb1-8af6-2bea640679a5)
+
 
 📌 Penjelasan:
 
@@ -78,7 +79,8 @@ Mockup antarmuka aplikasi yang dirancang menggunakan layout responsif dan sederh
 
 Storyboard menggambarkan alur proses penggunaan aplikasi oleh pengurus RT:
 
-![Storyboard](docs/storyboard.png)
+![WhatsApp Image 2025-07-03 at 22 27 55 (2)](https://github.com/user-attachments/assets/c1c82ce7-cdc3-4a29-9fb7-102a8d991560)
+
 
 📌 Penjelasan:
 
@@ -97,34 +99,47 @@ Berikut adalah beberapa tampilan antarmuka website beserta penjelasannya:
 1. Halaman Login
 
 Halaman login untuk masuk ke sistem. Pengguna memasukkan email dan password untuk mengakses sistem.
+![{0BEB343E-7E28-43C8-86F8-DFFE7E9A011E}](https://github.com/user-attachments/assets/0958ffe5-d4ac-4309-a150-97124484b2df)
 
 2. Halaman Register
 
 Halaman pendaftaran akun untuk pengurus RT baru. Form terdiri dari nama, email, dan password.
+![{52D9698D-1873-4C86-AD63-C2929C04F82E}](https://github.com/user-attachments/assets/615581ec-9ef7-412f-b889-1825ace74a40)
 
 3. Home / Dashboard
 
 Menampilkan ringkasan saldo kas, total warga, dan total iuran bulan ini. Navigasi ke fitur utama tersedia di sini.
+![{AE4EB5C0-1802-4694-9523-401834C6AF5D}](https://github.com/user-attachments/assets/f80784f4-474c-421f-8962-fdaddf54f338)
 
 4. Halaman Data Warga
 
 Halaman untuk melihat dan mengelola daftar warga. Dilengkapi tombol edit dan hapus untuk setiap warga.
+![{F810E92A-A268-469C-BFAB-2EAA82BC1DF1}](https://github.com/user-attachments/assets/953648de-853b-402a-b233-8279189bf0ec)
 
 5. Form Pembayaran
 
 Form pencatatan pembayaran iuran kas oleh warga berdasarkan nama dan bulan.
+![{BBE026E1-A7E1-4378-B2EE-6565780A0D66}](https://github.com/user-attachments/assets/8e575833-4cf0-47de-a415-feaa9d15cc7c)
 
 6. Buat Laporan Keuangan
 
 Form untuk memilih tanggal dan jenis transaksi dalam menyusun laporan keuangan RT.
+![{544FD4EE-BDD3-48F5-BA65-E2F84F4A65E3}](https://github.com/user-attachments/assets/826a0a1a-6177-48aa-bcb2-6908077c27e3)
 
-7. Halaman Cetak Laporan
+7. Halaman Hasil Laporan Keuangan
 
+Halaman yang menampilkan rekap hasil laporan keuangan setelah semua data transaksi dikompilasi. Memudahkan pengguna melihat status keuangan akhir bulan dengan jelas dan terperinci.
+![{54921748-11A1-4A3B-BA06-1BF8EBAE9B80}](https://github.com/user-attachments/assets/5285ac4f-db52-4193-9a08-769608fb83a8)
+
+8. Halaman Cetak Laporan
+   
 Tampilan laporan yang bisa dicetak ke PDF, mencakup total pemasukan dan pengeluaran.
+![{58BB5357-3A4D-42B2-8B88-BDF205E9F611}](https://github.com/user-attachments/assets/49f497cd-a112-437b-ad23-e00a35d99877)
 
-8. Halaman Profil
+9. Halaman Profil
 
 Menampilkan informasi akun pengguna serta opsi untuk memperbarui data profil dan logout.
+![{04B55762-A714-4135-B7F5-CB95351F520E}](https://github.com/user-attachments/assets/bc91b356-5710-4ac9-9509-4a7d86aba50c)
 
 ---
 
