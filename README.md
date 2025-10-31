@@ -7,7 +7,6 @@
 | 3  | LUTPIAH AINUS SHIDDIK | 312310474 |
 | 4  | ANANDA RAHMADANI  | 312310461 |
 
-
 # 💼 KASRT — Aplikasi Manajemen Keuangan RT
 
 KASRT adalah aplikasi berbasis web menggunakan CodeIgniter 4 yang dirancang untuk membantu pengurus RT dalam mencatat keuangan secara digital. Aplikasi ini mempermudah proses pencatatan iuran, pengeluaran, pembuatan laporan, dan pengelolaan data warga secara efisien dan transparan.
